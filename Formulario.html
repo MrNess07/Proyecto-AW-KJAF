@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donde Estamos Ubicados</title>
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="./Warzone 2.0 (Proyecto).css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./Multimedia/IMG/Favicon de Warzone.png" type="image/x-icon">
+    <!--Introducimos el icono de Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--Fuente de Google Oswald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="contenedor">
+        <nav class="nav-main">
+            <img src="./Multimedia/IMG/Logo Warzone 2.0.png" alt="Logo de Warzone 2.0" class="nav-logo">
+           
+            <ul class="menu-nav mostrar">
+                <li>
+                    <a href="./Tablas.html">Armas de Warzone</a>
+                </li>
+                <li>
+                    <a href="">Ricochet</a>
+                </li>
+                <li>
+                    <a href="">Tienda</a>
+                </li>
+                <li>
+                    <a href="">Call Of Duty League</a>
+                </li>
+                <li>
+                    <a href="">Nuevo Mapa: Al Mazrah</a>
+                </li>
+                <li>
+                    <a href="">Warzone Mobile</a>
+                </li>
+            </ul>
+
+            <ul class="menu-nav-derecha">
+                <li>
+                    <a href="">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </div>
+    
+    <!--Formulario-->
+    <h1 id="for">Formularios de Opiniones</h1>
+    <form action="contacto.php" method="post" class="formulario" target="_blank">
+        <label for="nombre">Nombre: </label>
+        <textarea name="area" id="area" cols="30" rows="10"></textarea>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+        
+        <fieldset>
+            <legend>Campos Especiales</legend>
+            <input type="color" name="color" id="color">
+            <input type="datetime-local" name="fecha" id="fecha">
+            <input type="file" name="archivo" id="archivo">
+            <input type="range" name="rango" id="rango" value="50">
+        </fieldset>
+        <select name="lista" id="lista">
+            <option value="España">España</option>
+            <option value="Italia">Italia</option>
+            <option value="Portugal" selected >Portugal</option>
+            <option value="Brasil">Brasil</option>
+        </select>
+        <div class="z">
+            <input type="password" name="pass" id="pass" placeholder="Escribe tu contraseña">
+            <input type="checkbox" onclick="Mostrar()">
+        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="">
+                        <h3>Activision</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Formulario.html">Formulario de Opiniones</a>
+                </li>
+                <li>
+                    <a href="./Ubicacion.html">Donde Estamos Ubicados</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">
+                        <h3>Titulo 2</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">Vacio</a>
+                </li>
+                <li>
+                    <a href="">Vacio</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">
+                        <h3>Titulo 3</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">Vacio</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h3><i>Kevin Flores Project</i></h3>
+    </footer>
+
+     <!--Scroll Reveal-->
+     <script src="https://unpkg.com/scrollreveal"></script>
+    
+     <!--JS Principal-->
+    <script src="Warzone 2.0 (Proyecto).js"></script>
+
+    <!--Formulario-->
+    <script>
+        function Mostrar() {
+            var x = document.getElementById("pass");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+        </script>
+    
+</body>
+</html>
